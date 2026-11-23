@@ -1,3 +1,5 @@
+import portrait from "@/assets/nayera-portrait.jpg.asset.json";
+
 // Site copy and photo slots. A photo slot without `src` renders as an empty frame
 // until a real photo is added.
 export type Photo = { src?: string; alt: string; caption: string };
@@ -19,7 +21,7 @@ export const nav = [
   { href: "#contact", label: "Contact" },
 ];
 
-export const heroPhoto: Photo = { alt: "Nayera Saeed Ahmed", caption: "Portrait" };
+export const heroPhoto: Photo = { src: portrait.url, alt: "Nayera Saeed Ahmed", caption: "Portrait" };
 
 export const screenWork: { photo: Photo; title: string; text: string; tag: string }[] = [
   {
