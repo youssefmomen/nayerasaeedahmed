@@ -1,4 +1,4 @@
-import portrait from "@/assets/nayera-portrait.jpg.asset.json";
+import portrait from "@/assets/nayera-portrait-cropped.jpg.asset.json";
 
 // Site copy and photo slots. A photo slot without `src` renders as an empty frame
 // until a real photo is added.
