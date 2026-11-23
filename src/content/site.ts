@@ -1,4 +1,5 @@
 import portrait from "@/assets/nayera-portrait-cropped.jpg.asset.json";
+import ebdaaAward from "@/assets/nayera-ebdaa-award.jpg.asset.json";
 
 // Site copy and photo slots. A photo slot without `src` renders as an empty frame
 // until a real photo is added.
@@ -67,7 +68,11 @@ export const services = [
 ];
 
 export const achievementPhotos: Photo[] = [
-  { alt: "Nayera at a broadcast event", caption: "Broadcast event" },
+  {
+    src: ebdaaAward.url,
+    alt: "Nayera holding her First Place certificate at the Ebda'a Festival for University Youth",
+    caption: "First Place, Best TV Correspondent — Ebda'a 2024–2025",
+  },
   { alt: "Nayera hosting", caption: "Hosting" },
   { alt: "Nayera at work", caption: "At work" },
 ];

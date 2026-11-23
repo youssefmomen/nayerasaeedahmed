@@ -94,13 +94,13 @@ export function Achievements() {
       <div className="wrap">
         <Kicker>Achievements</Kicker>
         <h2 className={h2}>Selected wins.</h2>
-        <div className="mt-[70px] grid grid-cols-2 gap-4 min-[901px]:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="mt-[70px] grid grid-cols-2 gap-4 min-[901px]:h-[560px] min-[901px]:grid-cols-[1.4fr_1fr_1fr]">
           {achievementPhotos.map((p, i) => (
             <figure
               key={i}
-              className={cn("group", i === 0 ? "col-span-2 aspect-[4/5] min-[901px]:col-span-1 min-[901px]:aspect-auto" : "aspect-[4/5]")}
+              className={cn("group aspect-[4/5] min-w-0 min-[901px]:aspect-auto", i === 0 && "col-span-2 min-[901px]:col-span-1")}
             >
-              <PhotoFrame photo={p} className="h-full" imgClassName="gallery-tone" />
+              <PhotoFrame photo={p} className="h-full w-full" imgClassName="gallery-tone" />
             </figure>
           ))}
         </div>
